@@ -30,6 +30,7 @@ public class UserController {
         Mechant mechantById=null;
         try {
             mechantById= mechantService.getMechantById(id);
+            mechantById.setId(1010101);
         } catch (Exception e) {
             System.out.println(e);
         }
